@@ -1,9 +1,4 @@
-name: python 3.7
+name: Python conda full
 dependencies:
-  - python=3.7
-  - numpy
-  - matplotlib
-  - tabulate
-  - scipy
-  - sympy
-  - pytz
+
+
