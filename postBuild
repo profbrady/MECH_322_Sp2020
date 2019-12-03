@@ -1,8 +1,0 @@
-jupyter contrib nbextension install --user
-jupyter nbextension enable collapsible_headings/main
-jupyter nbextension enable code_prettify/code_prettify
-jupyter nbextension enable rise/main
-jupyter nbextension enable varInspector/main
-jupyter nbextension enable livemdpreview/livemdpreview
-jupyter nbextension enable code_font_size/code_font_size
-jupyter nbextension enable hide_input/main
