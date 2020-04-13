@@ -10,22 +10,22 @@
 # import the modules you need
 
 
-# initially set the NeoPixel brightness to 0.2
+# initially set the NeoPixel brightness to 1.0
 # create variables `ON` and `OFF` and turn all NeoPixels OFF
 # set tracking variable `light_on` to `False`
 
-cp.pixels.brightness = 0.2
+cp.pixels.brightness = 1.0
 ON = (255, 255, 255)
 OFF = (0, 0, 0)
 cp.pixels.fill(OFF)
 light_on = False
 
 while True:
-    if cp.switch:
-        # turn on all NeoPixels to 0.5 brightness and set `light_on` variable
+    if not cp.switch:
+        # turn on all NeoPixels to 1.0 brightness and set `light_on` variable
     else:
         if light_on:  # lights are on, `light_on = True`
-            cp.pixels.brightness = 0.2
+            cp.pixels.brightness = 0.5
             cp.pixels.fill(ON)
             
             # add code to turn off lights per requirements
