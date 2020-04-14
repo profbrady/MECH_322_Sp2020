@@ -7,12 +7,10 @@
 # By: your name here
 #
 
-
-
 #import the modules you need
 
 
-# create a function to get the motor speed using from cp.light
+# create a function to get the motor speed from cp.light
 def get_motor_speed():
     return cp.light
 
@@ -22,31 +20,34 @@ def get_motor_speed():
 motor_speed = 0
 
 while True:
-    # check if the slide switch is left
-        # use get_motor_speed() to read the light sensor
-        # and scale it from 0-255 to 0-100 in steps of 10
-        # and assign to motor-speed
+    # check if the slide switch is False
+        # use `get_motor_speed()` to read the light sensor
+        # then scale it from 0-255 to 0-100 in steps of 10
+        # and assign the scaled value to `motor_speed`
         
-        # scale motor_speed value from 0-100 to 0-65535
-        # to determine motor_duty_cycle
+        # scale the `motor_speed` value from 0-100 to 0-65535
+        # to and assign to the variable `motor_duty_cycle`
         
-        # print 0-100% and duty cycle
+        # print `motor_speed` and `motor_duty_cycle` as integers
         
-        # turn on NeoPixels based on motor_speed
+        # turn on NeoPixels based on `motor_speed`
+        # delay for 0.25 seconds
     
-    # check if the slide switch is right
+    # check if the slide switch is True
         # check if only button A is pressed
-            # if so, reduce speed by 10 but
-            # don't set lower than 0
+            # if so, reduce `motor_speed` by 10 (but
+            # don't set it lower than 0)
+            # calculate `motor_duty_cycle`
             
-            # print 0-100% and duty cycle
-            # turn on NeoPixels base don motor_speed
+            # print `motor_speed` and `motor_duty_cycle` as integers
+            # turn on NeoPixels based on `motor_speed`
             # delay 0.25 seconds
             
         # check if only button B is pressed
-            # if so, increase speed by 10
-            # don't set higher than 100
+            # if so, increase `motor_speed` by 10  (but
+            # don't set higher than 100)
+            # calculate `motor_duty_cycle`
             
-            # print 0-100% and duty cycle
-            # turn on NeoPixels based on motor_speed
+            # print `motor_speed` and `motor_duty_cycle` as integers
+            # turn on NeoPixels based on `motor_speed`
             # delay 0.25 seconds
